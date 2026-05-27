@@ -1,0 +1,22 @@
+---
+import ButtonLink from "../common/ButtonLink.astro";
+import SectionTitle from "../common/SectionTitle.astro";
+---
+
+<section class="py-16 sm:py-20">
+	<div class="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-[0.8fr_1fr] lg:px-8">
+		<SectionTitle eyebrow="About" title="課題と技術を結ぶ開発を目指しています" />
+		<div>
+			<p class="leading-8 text-slate-600">
+				大学・学習歴、志望職種、開発で大切にしている考え方をここに記載します。
+				作品ページでは、成果だけでなく背景、技術選定、改善の過程まで伝わる構成を意識しています。
+			</p>
+			<p class="mt-5 leading-8 text-slate-600">
+				現在はWebアプリケーション開発に加え、データ分析や機械学習を活用した課題解決に関心があります。
+			</p>
+			<div class="mt-8">
+				<ButtonLink href="#contact" variant="secondary">お問い合わせ</ButtonLink>
+			</div>
+		</div>
+	</div>
+</section>

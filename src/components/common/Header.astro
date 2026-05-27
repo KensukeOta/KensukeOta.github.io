@@ -1,0 +1,53 @@
+---
+interface Props {
+	currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const links = [
+	{ href: "/", label: "Home" },
+	{ href: "/projects", label: "Projects" },
+	{ href: "/#skills", label: "Skills" },
+	{ href: "/#contact", label: "Contact" },
+];
+
+const isActive = (href: string) =>
+	href === "/" ? currentPath === "/" : href === "/projects" && currentPath.startsWith("/projects");
+---
+
+<header class="border-b border-slate-200 bg-white/95">
+	<div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-5 lg:px-8">
+		<a href="/" class="group flex items-center gap-3" aria-label="トップページへ">
+			<span
+				class="flex size-10 items-center justify-center rounded-lg bg-slate-900 text-sm font-semibold text-white"
+			>
+				YN
+			</span>
+			<span class="leading-tight">
+				<span class="block font-semibold tracking-tight text-slate-900">Your Name</span>
+				<span class="block text-xs text-slate-500">Portfolio</span>
+			</span>
+		</a>
+
+		<nav aria-label="メインナビゲーション">
+			<ul class="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium">
+				{
+					links.map((link) => (
+						<li>
+							<a
+								href={link.href}
+								aria-current={isActive(link.href) ? "page" : undefined}
+								class:list={[
+									"transition-colors hover:text-blue-700",
+									isActive(link.href) ? "text-blue-700" : "text-slate-600",
+								]}
+							>
+								{link.label}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</nav>
+	</div>
+</header>
