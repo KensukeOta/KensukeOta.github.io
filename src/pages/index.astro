@@ -7,17 +7,17 @@ import Skills from "../components/home/Skills.astro";
 import Layout from "../layouts/Layout.astro";
 
 const projects = (await getCollection("projects"))
-	.filter((project) => project.data.featured)
-	.sort((a, b) => a.data.order - b.data.order)
-	.slice(0, 3);
+  .filter((project) => project.data.featured)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
 ---
 
 <Layout
-	title="Portfolio | Your Name"
-	description="Webアプリケーション開発とデータ分析に取り組むエンジニアのポートフォリオです。"
+  title="Portfolio | Ota Kensuke"
+  description="Webアプリケーション開発とデータ分析に取り組むエンジニアのポートフォリオです。"
 >
-	<Hero />
-	<FeaturedProjects projects={projects} />
-	<Skills />
-	<ProfileSummary />
+  <Hero />
+  <FeaturedProjects projects={projects} />
+  <Skills />
+  <ProfileSummary />
 </Layout>

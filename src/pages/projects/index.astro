@@ -4,27 +4,29 @@ import ProjectCard from "../../components/projects/ProjectCard.astro";
 import SectionTitle from "../../components/common/SectionTitle.astro";
 import Layout from "../../layouts/Layout.astro";
 
-const projects = (await getCollection("projects")).sort((a, b) => a.data.order - b.data.order);
+const projects = (await getCollection("projects")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
 ---
 
 <Layout
-	title="Projects | Your Name"
-	description="Webアプリケーション、機械学習、データ分析の制作物一覧です。"
+  title="Projects | Ota Kensuke"
+  description="Webアプリケーション、機械学習、データ分析の制作物一覧です。"
 >
-	<section class="border-b border-slate-200 bg-white">
-		<div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-20">
-			<SectionTitle
-				eyebrow="Projects"
-				title="制作物一覧"
-				description="取り組んだ課題、担当範囲、活用した技術を作品ごとにまとめています。詳細ページから制作過程をご覧いただけます。"
-			/>
-		</div>
-	</section>
-	<section class="py-14 sm:py-16">
-		<div class="mx-auto max-w-6xl px-6 lg:px-8">
-			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-				{projects.map((project) => <ProjectCard project={project} />)}
-			</div>
-		</div>
-	</section>
+  <section class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-20">
+      <SectionTitle
+        eyebrow="Projects"
+        title="制作物一覧"
+        description="取り組んだ課題、担当範囲、活用した技術を作品ごとにまとめています。詳細ページから制作過程をご覧いただけます。"
+      />
+    </div>
+  </section>
+  <section class="py-14 sm:py-16">
+    <div class="mx-auto max-w-6xl px-6 lg:px-8">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+  </section>
 </Layout>

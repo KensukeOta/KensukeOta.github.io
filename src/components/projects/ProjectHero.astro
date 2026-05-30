@@ -4,44 +4,66 @@ import ButtonLink from "../common/ButtonLink.astro";
 import Tag from "../common/Tag.astro";
 
 interface Props {
-	project: CollectionEntry<"projects">;
+  project: CollectionEntry<"projects">;
 }
 
 const { project } = Astro.props;
-const { title, summary, category, technologies, period, role, github, demo } = project.data;
+const { title, summary, category, technologies, period, role, github, demo } =
+  project.data;
 ---
 
 <header class="border-b border-slate-200 bg-white">
-	<div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-20">
-		<a href="/projects" class="text-sm font-semibold text-blue-700 hover:text-blue-800">
-			&lt;- 作品一覧へ戻る
-		</a>
-		<p class="mt-10 text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">{category}</p>
-		<h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">{title}</h1>
-		<p class="mt-6 max-w-3xl text-lg leading-9 text-slate-600">{summary}</p>
+  <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-20">
+    <a
+      href="/projects"
+      class="text-sm font-semibold text-blue-700 hover:text-blue-800"
+    >
+      &lt;- 作品一覧へ戻る
+    </a>
+    <p
+      class="mt-10 text-xs font-semibold tracking-[0.22em] text-blue-700 uppercase"
+    >
+      {category}
+    </p>
+    <h1
+      class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl"
+    >
+      {title}
+    </h1>
+    <p class="mt-6 max-w-3xl text-lg leading-9 text-slate-600">{summary}</p>
 
-		<dl class="mt-10 grid gap-6 border-y border-slate-200 py-7 text-sm sm:grid-cols-2">
-			<div>
-				<dt class="font-semibold text-slate-500">制作期間</dt>
-				<dd class="mt-2 font-medium text-slate-900">{period}</dd>
-			</div>
-			<div>
-				<dt class="font-semibold text-slate-500">担当範囲</dt>
-				<dd class="mt-2 font-medium text-slate-900">{role}</dd>
-			</div>
-		</dl>
+    <dl
+      class="mt-10 grid gap-6 border-y border-slate-200 py-7 text-sm sm:grid-cols-2"
+    >
+      <div>
+        <dt class="font-semibold text-slate-500">制作期間</dt>
+        <dd class="mt-2 font-medium text-slate-900">{period}</dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-slate-500">担当範囲</dt>
+        <dd class="mt-2 font-medium text-slate-900">{role}</dd>
+      </div>
+    </dl>
 
-		<div class="mt-8 flex flex-wrap gap-2">
-			{technologies.map((technology) => <Tag>{technology}</Tag>)}
-		</div>
+    <div class="mt-8 flex flex-wrap gap-2">
+      {technologies.map((technology) => <Tag>{technology}</Tag>)}
+    </div>
 
-		{
-			(github || demo) && (
-				<div class="mt-10 flex flex-wrap gap-4">
-					{demo && <ButtonLink href={demo} external>デモを見る</ButtonLink>}
-					{github && <ButtonLink href={github} variant="secondary" external>GitHub</ButtonLink>}
-				</div>
-			)
-		}
-	</div>
+    {
+      (github || demo) && (
+        <div class="mt-10 flex flex-wrap gap-4">
+          {demo && (
+            <ButtonLink href={demo} external>
+              デモを見る
+            </ButtonLink>
+          )}
+          {github && (
+            <ButtonLink href={github} variant="secondary" external>
+              GitHub
+            </ButtonLink>
+          )}
+        </div>
+      )
+    }
+  </div>
 </header>

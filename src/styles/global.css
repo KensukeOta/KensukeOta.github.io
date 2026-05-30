@@ -1,56 +1,56 @@
 @import "tailwindcss";
 
 :root {
-	font-family:
-		Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, system-ui,
-		sans-serif;
-	color: #0f172a;
-	background: #f8fafc;
+  font-family:
+    Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo,
+    system-ui, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ::selection {
-	background: #bfdbfe;
+  background: #bfdbfe;
 }
 
 .project-content h2 {
-	margin-top: 3rem;
-	font-size: 1.4rem;
-	font-weight: 700;
-	letter-spacing: -0.025em;
-	color: #0f172a;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #0f172a;
 }
 
 .project-content h3 {
-	margin-top: 2rem;
-	font-size: 1.05rem;
-	font-weight: 700;
-	color: #1e293b;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e293b;
 }
 
 .project-content p,
 .project-content li {
-	color: #475569;
-	line-height: 1.9;
+  color: #475569;
+  line-height: 1.9;
 }
 
 .project-content p {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .project-content ul {
-	margin-top: 1rem;
-	padding-left: 1.4rem;
-	list-style: disc;
+  margin-top: 1rem;
+  padding-left: 1.4rem;
+  list-style: disc;
 }

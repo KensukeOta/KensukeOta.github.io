@@ -5,24 +5,24 @@ import SectionTitle from "../common/SectionTitle.astro";
 import ProjectCard from "../projects/ProjectCard.astro";
 
 interface Props {
-	projects: CollectionEntry<"projects">[];
+  projects: CollectionEntry<"projects">[];
 }
 
 const { projects } = Astro.props;
 ---
 
 <section class="py-16 sm:py-20">
-	<div class="mx-auto max-w-6xl px-6 lg:px-8">
-		<div class="flex flex-col justify-between gap-7 sm:flex-row sm:items-end">
-			<SectionTitle
-				eyebrow="Featured Projects"
-				title="代表的な制作物"
-				description="Web開発からデータ活用まで、課題設定と実装の過程を詳細ページで紹介します。"
-			/>
-			<ButtonLink href="/projects" variant="secondary">すべての作品</ButtonLink>
-		</div>
-		<div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-			{projects.map((project) => <ProjectCard project={project} />)}
-		</div>
-	</div>
+  <div class="mx-auto max-w-6xl px-6 lg:px-8">
+    <div class="flex flex-col justify-between gap-7 sm:flex-row sm:items-end">
+      <SectionTitle
+        eyebrow="Featured Projects"
+        title="代表的な制作物"
+        description="Web開発からデータ活用まで、課題設定と実装の過程を詳細ページで紹介します。"
+      />
+      <ButtonLink href="/projects" variant="secondary">すべての作品</ButtonLink>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </div>
 </section>
