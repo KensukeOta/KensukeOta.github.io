@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 import Tag from "../common/Tag.astro";
 
 interface Props {
@@ -7,17 +8,20 @@ interface Props {
 }
 
 const { project } = Astro.props;
-const { title, summary, category, technologies } = project.data;
+const { title, summary, category, ogp, technologies } = project.data;
 ---
 
 <article
   class="group flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:border-slate-300 hover:shadow-sm"
 >
-  <div class="border-b border-slate-100 bg-slate-100 px-6 py-8">
-    <p class="text-xs font-semibold tracking-[0.18em] text-blue-700 uppercase">
-      {category}
-    </p>
-    <div class="mt-8 h-px w-14 bg-blue-700"></div>
+  <div class="aspect-1200/630 border-b border-slate-100 bg-slate-100">
+    <Image
+      src={ogp}
+      alt={title}
+      widths={[400, 800, 1200]}
+      sizes="(max-width: 768px) 100vw, 400px"
+      class="h-full w-full object-cover"
+    />
   </div>
   <div class="flex flex-1 flex-col p-6">
     <h3 class="text-xl font-bold tracking-tight text-slate-900">{title}</h3>

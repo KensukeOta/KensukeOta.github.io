@@ -2,6 +2,7 @@
 title: "Insight Report AI"
 summary: "CSVをアップロードするだけで、EDA・可視化・AI要約レポートを自動生成する非エンジニア向けAI分析Webアプリ"
 category: "Data Analysis / ML"
+ogp: "../../assets/ogp-insight-report-ai.png"
 period: "2026.04 - 2026.05"
 role: "個人開発 / 企画・設計・フルスタック開発・AI実装・テスト・デプロイ"
 technologies:

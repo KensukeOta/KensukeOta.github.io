@@ -2,6 +2,7 @@
 title: "学習記録サポートアプリ"
 summary: "学習時間とタスクを一元管理し、継続状況を週単位で振り返れるWebアプリケーション。"
 category: "Web Application"
+ogp: "../../assets/ogp-attrition-risk-analyzer.png"
 period: "2025.10 - 2025.12"
 role: "個人制作 / 設計・フロントエンド実装"
 technologies: ["Svelte", "TypeScript", "Tailwind CSS", "Supabase"]

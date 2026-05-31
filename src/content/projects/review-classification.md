@@ -2,6 +2,7 @@
 title: "レビュー分類モデルの検証"
 summary: "商品レビューのテキストから評価傾向を分類し、前処理とモデル選択の影響を比較した分析。"
 category: "Machine Learning"
+ogp: "../../assets/ogp-insight-report-ai.png"
 period: "2025.07 - 2025.09"
 role: "個人研究 / 前処理・学習・評価"
 technologies: ["Python", "scikit-learn", "NLP", "Jupyter"]
