@@ -6,7 +6,10 @@ ogp: "../../assets/ogp-insight-report-ai.png"
 period: "2025.07 - 2025.09"
 role: "個人研究 / 前処理・学習・評価"
 technologies: ["Python", "scikit-learn", "NLP", "Jupyter"]
+projectNote: "Comming soon ..."
 featured: true
+demo: "https://example.com"
+github: "https://github.com/KensukeOta/"
 order: 3
 ---
 

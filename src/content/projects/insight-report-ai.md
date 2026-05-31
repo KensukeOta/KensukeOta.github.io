@@ -15,7 +15,12 @@ technologies:
     "scikit-learn",
     "matplotlib",
   ]
+projectNote: "CSVアップロードのみで、 EDA・可視化・AI要約を行える
+  非エンジニア向け分析ツールとして開発。 AIフォールバック設計や
+  テスト・CI/CDも実装し、 実務を意識した開発を行いました。"
 featured: true
+demo: "https://insight-report-ai-kensuke.vercel.app"
+github: "https://github.com/KensukeOta/Insight-Report-AI"
 order: 1
 ---
 

@@ -1,12 +1,24 @@
 ---
-title: "学習記録サポートアプリ"
-summary: "学習時間とタスクを一元管理し、継続状況を週単位で振り返れるWebアプリケーション。"
+title: "Attrition Risk Analyzer"
+summary: "LightGBMで学習した離職予測モデルをFastAPIに組み込み、SvelteKitで可視化した社員離職リスク予測Webアプリです。単体予測、CSV一括予測、特徴量重要度、モデル評価に対応しています。"
 category: "Web Application"
 ogp: "../../assets/ogp-attrition-risk-analyzer.png"
 period: "2025.10 - 2025.12"
 role: "個人制作 / 設計・フロントエンド実装"
-technologies: ["Svelte", "TypeScript", "Tailwind CSS", "Supabase"]
+technologies:
+  [
+    "Python",
+    "TypeScript",
+    "FastAPI",
+    "SvelteKit",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+  ]
+projectNote: "機械学習モデルを学習させるだけでなく、FastAPIによるAPI化、SvelteKitによるUI実装、デプロイまで一貫して行ったプロジェクトです。離職予測という実務的なテーマを扱い、単体予測・CSV一括予測・特徴量重要度・モデル評価まで確認できる構成にしました。"
 featured: true
+demo: "https://attrition-risk-analyzer-kensuke.vercel.app"
+github: "https://github.com/KensukeOta/Attrition-Risk-Analyzer"
 order: 2
 ---
 
