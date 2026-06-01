@@ -8,6 +8,9 @@ on:
   # GitHub上のActionsタブからこのワークフローを手動で実行できます。
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # このジョブがリポジトリをクローンし、ページデプロイメントを作成することを許可します。
 permissions:
   contents: read
@@ -20,8 +23,11 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
+
       - name: Install, build, and upload your site
         uses: withastro/action@v5
+        with:
+          node-version: 24
         # with:
         # path: . # リポジトリ内のAstroプロジェクトのルート位置です。（オプション）
         # node-version: 24 # サイトのビルドに使用するNodeのバージョンです。デフォルトは22です。（オプション）
