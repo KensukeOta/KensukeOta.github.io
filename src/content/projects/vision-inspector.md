@@ -1,15 +1,15 @@
 ---
-title: "レビュー分類モデルの検証"
-summary: "商品レビューのテキストから評価傾向を分類し、前処理とモデル選択の影響を比較した分析。"
-category: "Machine Learning"
-ogp: "../../assets/ogp-insight-report-ai.png"
-period: "2025.07 - 2025.09"
+title: "Vision Inspector"
+summary: "AIによる画像異常検知Webアプリケーションです。 Anomalib（PaDiM）を利用し、画像をアップロードするだけで異常箇所を検出し、ヒートマップ付きの異常マップをブラウザ上で確認できます。"
+category: "Deep Learning"
+ogp: "../../assets/ogp-vision-inspector.png"
+period: "2026.06 - 2026.07"
 role: "個人研究 / 前処理・学習・評価"
 technologies: ["Python", "scikit-learn", "NLP", "Jupyter"]
 projectNote: "Comming soon ..."
 featured: true
-demo: "https://example.com"
-github: "https://github.com/KensukeOta/"
+demo: "https://vision-inspector-kensuke.vercel.app"
+github: "https://github.com/KensukeOta/VisionInspector"
 order: 3
 ---
 

@@ -11,6 +11,10 @@ export default defineConfig({
 
   integrations: [svelte()],
 
+  build: {
+    assetsPrefix: ".",
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
