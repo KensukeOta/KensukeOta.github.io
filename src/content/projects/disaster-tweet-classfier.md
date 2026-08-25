@@ -1,25 +1,17 @@
 ---
-title: "Attrition Risk Analyzer"
-summary: "LightGBMで学習した離職予測モデルをFastAPIに組み込み、SvelteKitで可視化した社員離職リスク予測Webアプリです。単体予測、CSV一括予測、特徴量重要度、モデル評価に対応しています。"
-category: "Web Application"
-ogp: "../../assets/ogp-attrition-risk-analyzer.png"
-period: "2026.04 - 2026.05"
+title: "Disaster-Tweet-Classfier"
+summary: "英語のツイートが実際の災害に関する投稿かどうかを判定するWebアプリケーションです。"
+category: "Deep Learning"
+ogp: "../../assets/ogp-disaster-tweet-classfier.png"
+period: "2026.06 - 2026.08"
 role: "個人制作 / 設計・フロントエンド実装"
 technologies:
-  [
-    "Python",
-    "TypeScript",
-    "FastAPI",
-    "SvelteKit",
-    "pandas",
-    "scikit-learn",
-    "matplotlib",
-  ]
+  ["Python", "TypeScript", "FastAPI", "SvelteKit", "Pytorch", "transformer"]
 projectNote: "機械学習モデルを学習させるだけでなく、FastAPIによるAPI化、SvelteKitによるUI実装、デプロイまで一貫して行ったプロジェクトです。離職予測という実務的なテーマを扱い、単体予測・CSV一括予測・特徴量重要度・モデル評価まで確認できる構成にしました。"
 featured: true
-demo: "https://attrition-risk-analyzer-kensuke.vercel.app"
-github: "https://github.com/KensukeOta/Attrition-Risk-Analyzer"
-order: 2
+demo: "https://disaster-tweet-classifier-app.vercel.app"
+github: "https://github.com/KensukeOta/Disaster-Tweet-Classifier-App"
+order: 4
 ---
 
 ## 概要
