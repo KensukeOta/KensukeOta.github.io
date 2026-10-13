@@ -1,7 +1,7 @@
 ---
 title: "Attrition Risk Analyzer"
 summary: "LightGBMで学習した離職予測モデルをFastAPIに組み込み、SvelteKitで可視化した社員離職リスク予測Webアプリです。単体予測、CSV一括予測、特徴量重要度、モデル評価に対応しています。"
-category: "Web Application"
+category: "Machine Learning / Web Application"
 ogp: "../../assets/ogp-attrition-risk-analyzer.png"
 period: "2026.04 - 2026.05"
 role: "個人制作 / 設計・フロントエンド実装"
